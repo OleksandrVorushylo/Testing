@@ -904,6 +904,8 @@ main {
 .team {
   position: relative;
   height: 967px;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .team-bg {
@@ -1232,6 +1234,8 @@ main {
   background-color: #F8F8F8;
   height: 1040px;
   position: relative;
+  width: 100vw;
+  overflow: hidden;
 }
 
 .contact-bg-left {
@@ -1929,6 +1933,9 @@ main {
 }
 
 @media (max-width: 968px) {
+  body {
+    max-width: 100vw;
+  }
   .top-bg__circle-bg {
     top: 100px;
     left: 20%;
