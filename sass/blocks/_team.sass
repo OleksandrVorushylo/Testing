@@ -1,0 +1,273 @@
+.team
+  position: relative
+  height: 967px
+  // margin-bottom: 1000px
+  &-bg
+    position: absolute
+    z-index: -1
+    top: 0
+    bottom: 0
+    left: 0
+    width: 61.5625%
+    height: 100%
+    background: linear-gradient(90deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 107.87%)
+
+  // &__teams-wrap
+  //   flex-basis: 100%
+  &__teams
+    position: relative
+    width: 633px
+    height: 68px
+    margin-left: 450px
+    margin-top: 71px
+    background-color: #F0F0F0
+    border-radius: 61px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 43px
+    padding-right: 40px
+    transition: all 0.3s ease
+    overflow: hidden
+  &__bg-button
+    position: absolute
+    left: 0
+
+    width: 211px
+    height: 68px
+    border-radius: 61px
+    background-color: $pink
+    transition: all 0.3s ease
+    &--center
+      transform: translateX(211px)
+      transition: all 0.3s ease
+    &--right
+      transform: translateX(422px)
+      transition: all 0.3s ease
+  &__button span
+    background: url('../img/team/icon/team.svg') 0 0 / 100% no-repeat
+    display: block
+    width: 25px
+    height: 25px
+    margin-right: 16px
+  &__button
+    position: relative
+    z-index: 10
+    display: flex
+    align-items: center
+    border: none
+    text-decoration: none
+    background-color: transparent
+    color: $text-title
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 28px
+    &:hover
+      filter: drop-shadow(2px 2px 2px #2222226c)
+    &--active
+      font-weight: 500
+      font-size: 24px
+      line-height: 28px
+      color: #fff
+    &--active span
+      background: url('../img/team/icon/team-active.svg') 0 0 / 100% no-repeat
+      margin-right: 15px
+
+  &__cross-border
+    background: url('../img/team/bg/cross.svg') 0 0 / 100% no-repeat
+    width: 170.41px
+    height: 171.41px
+    position: absolute
+    &--right
+      top: 105px
+      right: 252px
+    &--left
+      bottom: 68px
+      left: 50px
+
+  &__wrap
+    padding-top: 120px
+    padding-bottom: 140px
+
+  &__content
+    display: flex
+    // flex-wrap: wrap
+    margin-top: 71px
+  &__about
+    width: 430px
+    margin-right: 20px
+  &__about-title
+    color: $text-title
+    font-style: normal
+    font-weight: 500
+    font-size: 34px
+    line-height: 39px
+  &__text
+    display: none
+    color: #3D3D3D
+    font-weight: 300
+    font-size: 24px
+    line-height: 147%
+    margin-top: 18px
+    width: 100%
+    &--active
+      display: block
+
+  &__slider-wrap
+    position: relative
+    height: 455px
+
+  &__slider
+    overflow: hidden
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    width: 1780px
+
+  &__swiper-wrapper
+
+  &__item
+    position: relative
+    border-radius: 5px
+    width: 430px
+    height: 345px
+    border: 1px solid #9A9A9A
+    transition: all 0.3s ease
+    overflow: hidden
+  &__item:nth-child(1)
+    // background: url(../img/team/slider/item-1.jpg) center/cover no-repeat
+  &__item:nth-child(2)
+    // background: url(../img/team/slider/item-2.jpg) center/cover no-repeat
+  &__item:nth-child(3)
+    // background: url(../img/team/slider/item-3.jpg) center/cover no-repeat
+  &__item:nth-child(4)
+    // background: url(../img/team/slider/item-4.jpg) center/cover no-repeat
+
+  &__img
+    position: absolute
+    z-index: -5
+    top: 0px
+    bottom: 0px
+    right: 0px
+    left: 0px
+    object-fit: cover
+    height: 100%
+    width: 100%
+  &__img:nth-child(1)
+    object-position: 50% 78%
+
+  &__item-content
+    position: absolute
+    z-index: -5
+    opacity: 0
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    z-index: 10
+    background-color: transparent
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-end
+    padding-bottom: 57px
+    transition: all 0.3s ease
+
+  &__item:hover .team__item-content
+    z-index: 10
+    opacity: 1
+    background-color: #00000080
+
+  &__name
+    font-style: normal
+    font-weight: 500
+    font-size: 30px
+    line-height: 34px
+    text-align: center
+    color: #fff
+  &__profession
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 28px
+    color: $text-gray
+    margin-top: 10px
+  &__item-button
+    background-color: $pink
+    border: none
+    border-radius: 49px
+    width: 267px
+    height: 64px
+    display: flex
+    align-items: center
+    justify-content: center
+    text-align: center
+    color: #fff
+    font-style: normal
+    font-weight: normal
+    font-size: 24px
+    line-height: 28px
+    margin-top: 30px
+
+  &__button-next
+    border: 1px solid #DEDEDE
+    border-radius: 50%
+    width: 50px
+    height: 50px
+    bottom: 0
+    top: auto
+    right: 25.2809%
+    transition: all 0.3s ease
+    background-color: #F8F8F8
+    &::after
+      content: none
+    &:hover
+      background-color: #DEDEDE
+      transition: all 0.3s ease
+  &__button-prev
+    border: 1px solid #DEDEDE
+    border-radius: 50%
+    width: 50px
+    height: 50px
+    bottom: 0
+    left: auto
+    top: auto
+    right: 29.77528%
+    transition: all 0.3s ease
+    background-color: #F8F8F8
+    &::after
+      content: none
+    &:hover
+      background-color: #DEDEDE
+      transition: all 0.3s ease
+
+  &__button-prev img
+    transform: rotate(180deg)
+  &__button-next img
+
+.team .swiper-container-horizontal > .swiper-scrollbar
+  width: 1028px
+  left: 0
+  // margin-top: -60px
+  background-color: transparent
+  border-bottom: 1px solid #676767
+  height: 3.5px
+  transform: translateY(-22px)
+.team .swiper-scrollbar-drag
+  width: 230px !important
+.team .swiper-button-disabled
+  opacity: 1
+  background-color: transparent
+.team .swiper-button-disabled img
+  opacity: 0.5
+.team .swiper-scrollbar-drag
+  height: 7px
+  background: #17191D
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15)
+  border-radius: 1px
+
+.team .container
+  position: relative
+  height: 100%

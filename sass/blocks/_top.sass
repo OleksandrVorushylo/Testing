@@ -1,0 +1,202 @@
+.bg-top
+  position: absolute
+  z-index: -100
+  background-color: $background
+  width: 100%
+  height: 1079px
+  top: 0
+.top
+  position: relative
+  margin: auto
+  margin-top: -91px
+  height: 1079px
+  background-color: $background
+  overflow: hidden
+  max-width: 1920px
+  // transform: translateY(-100px)
+  &-bg
+    // width: 100%
+    // max-width: 1920px
+    // height: 100%
+    // margin: auto
+    // position:absolute
+    &__left
+      position: absolute
+      z-index: 2
+      left: 2.13%
+      top: 133.44px
+      height: 709.82px
+    &__right
+      position: absolute
+      z-index: 2
+      right: 26.62px
+      bottom: -45.26px
+      height: 719.4px
+      width: 852.3px
+    &__cross
+
+      position: absolute
+      z-index: 3
+      top: 408px
+      right: 112px
+      transform: rotate(45deg) scale(1.08)
+      // box-sizing: content-box
+    &__cross span
+      display: block
+      // box-sizing: content-box
+      background: $pink
+      height: 272.23px
+      width: 74.46px
+      position: relative
+    &__cross:after
+      // box-sizing: content-box
+      content: ""
+      height: 74.46px
+      width: 272.23px
+      background: $pink
+      position: absolute
+      left: -98px
+      top: 98px
+
+    &__cross-border
+      position: absolute
+      transform: rotate(45deg)
+      // box-sizing: content-box
+      bottom: 110.47px
+      left: 207.05px
+    &__cross-border span
+      display: block
+      border: 4px solid #FF0B53
+      background: $background
+      height: 148.41px
+      width: 44.85px
+      position: relative
+      box-sizing: content-box
+    &__cross-border:after
+      box-sizing: content-box
+      content: ""
+      height: 44.85px
+      width: 148.41px
+      background: $background
+      border: 4px solid #FF0B53
+      position: absolute
+      left: -52px
+      top: 52px
+    &__cross-border::before
+      box-sizing: border-box
+      content: ""
+      height: 140.41px
+      width: 45.85px
+      background: $background
+      border: none
+      position: absolute
+      z-index: 1
+      top: 3px
+      bottom: 3px
+      right: 3px
+      left: 3px
+
+    &__circle
+      position: absolute
+      z-index: 1
+      top: 787px
+      left: 51.5%
+      transform: translate(-50%, 0)
+      height: 1021px
+      width: 1021px
+      border: 160.95px solid $pink
+      background-color: $background
+      border-radius: 50%
+    &__circle-bg
+      position: absolute
+      left: 411px
+      top: 52px
+      z-index: 3
+      width: 256px
+      height: 256px
+      background-color: $pink
+      border-radius: 50%
+
+  &__wrap
+    height: 100%
+
+  &__content
+    position: relative
+    z-index: 10
+    width: 1268px
+    height: 584px
+    margin: auto
+    background: linear-gradient(104.93deg, rgba(122, 122, 122, 0.19) 1.86%, rgba(122, 122, 122, 0) 104.73%)
+    filter: drop-shadow(0px 4px 4px rgba(50, 50, 50, 0.15))
+    backdrop-filter: blur(100px)
+    -webkit-backdrop-filter: blur(100px)
+    // filter: blur(100px)
+    border-radius: 7px
+    overflow: hidden
+    margin-top: 248px
+    &-wrap
+      position: absolute
+      z-index: 12
+      top: 0
+      left: 0
+      bottom: 0
+      right: 0
+      padding: 72px 46px
+  &__blur
+    position: absolute
+    width: 100%
+    height: 100%
+    z-index: 11
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    // filter: blur(5px)
+    background: linear-gradient(104.93deg, rgba(31, 31, 31, 0.377) 10.86%, rgba(41, 41, 41, 0) 204.73%)
+    filter: drop-shadow(0px 4px 4px rgba(50, 50, 50, 0.514)) blur(100px)
+    opacity: 0
+    &--true
+      opacity: 1
+
+  &__content-wrap
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    font-weight: 300
+    font-size: 24px
+    line-height: 28px
+  &__title
+    font-weight: 700
+    font-size: 72px
+    line-height: 83px
+    color: #fff
+    text-align: center
+  &__text
+    width: 742px
+    color: #fff
+    margin-top: -74px
+    margin-left: 22px
+  &__buttons
+    display: flex
+    width: 628px
+    align-items: center
+    justify-content: space-between
+  &__button
+    color: #fff
+    text-decoration: none
+    border: none
+    border-radius: 36px
+    width: 284px
+    height: 64px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    font-size: 24px
+    line-height: 28px
+    &--bg
+      background-color: $pink
+    &--br
+      background-color: transparent
+      border: 1px solid #FFFFFF

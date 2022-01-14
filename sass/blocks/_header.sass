@@ -1,0 +1,59 @@
+.header
+  position: relative
+  z-index: 100
+  padding-top: 22px
+  background-color: transparent
+  &__wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+    height: 70px
+  &__logo
+    position: relative
+    height: 100%
+    color: $text-gray
+    text-decoration: none
+    font-style: normal
+    font-weight: 500
+    font-size: 36px
+    line-height: 41px
+    display: flex
+    align-items: center
+  &__logo span:nth-child(1)
+    height: 55px
+    width: 55px
+    background-color: $pink
+    border-radius: 50%
+    margin-right: 14px
+  &__logo span:nth-child(2)
+    position: absolute
+    left: 21px
+    width: 46.5px
+    height: 46.5px
+    background-color: #fff
+    border-radius: 50%
+    border: 3px solid $background
+  &-nav
+    &__list
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-right: 1px
+    &__item
+      margin-left: 30px
+    &__link
+      color: #fff
+      text-transform: uppercase
+      text-decoration: none
+      font-family: Ubuntu
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 18px
+
+.header__menu
+  display: none
+.header-nav__social-items
+  display: none
+.header__blur
+  display: none

@@ -1,0 +1,74 @@
+*
+  box-sizing: border-box
+img
+  margin: 0
+  max-width: 100%
+li
+  list-style-type: none
+h1, h2, h3, h4, h5, h6, p
+  margin: 0
+button, input, a
+  outline: none
+  cursor: pointer
+  color: $black
+html
+  // overflow-x: hidden
+  height: 100%
+body
+  color: $black
+  font-family: 'Ubuntu', sans-serif
+  font-weight: normal
+  font-size: 16px
+  font-style: normal
+  letter-spacing: normal
+  line-height: normal
+  overflow-x: hidden
+  // overflow-y: hidden
+  // margin-bottom: 100px
+main
+  position: relative
+.container
+  width: 92.70833%
+  max-width: 1780px
+  margin: auto
+
+.title
+  color: $text-title
+  font-style: normal
+  font-weight: bold
+  font-size: 54px
+  line-height: 62px
+
+.logo
+  transition: all 0.3s ease
+  &:hover span
+    transition: all 0.3s ease
+  &:hover span:nth-child(1)
+    background-color: #fff
+  &:hover span:nth-child(2)
+    background-color: $pink
+.logo span
+  transition: all 0.3s ease
+
+.button
+  transition: all 0.3s ease
+  &:hover
+    color: $pink
+    background-color: $text-gray
+    transition: all 0.3s ease
+
+.top__link
+  transition: all 0.3s ease
+  &:hover
+    background-color: $pink
+    border: 1px solid $pink
+    transition: all 0.3s ease
+
+.link-nav
+  transition: all 0.3s ease
+  &:hover
+    transition: all 0.3s ease
+    border-bottom: 1px solid #fff
+
+.slick-track
+  display: flex
