@@ -59,8 +59,6 @@ window.addEventListener('DOMContentLoaded', () => {
 			tab = document.querySelectorAll('.partners__tab'),
 			tabContent = document.querySelectorAll('.partners__content');
 
-		// Функция смены контента
-
 		const toggleTabContent = index => {
 			for (let i = 0; i < tabContent.length; i++) {
 				if (index === i) {
@@ -71,7 +69,6 @@ window.addEventListener('DOMContentLoaded', () => {
 			}
 		};
 
-		// Клики по табам
 		tabs.addEventListener('click', event => {
 			let target = event.target;
 			target = target.closest('.partners__tab');
@@ -123,11 +120,6 @@ window.addEventListener('DOMContentLoaded', () => {
 	const swiper = new Swiper('.team__slider', {
 		slidesPerView: 4,
 		spaceBetween: 20,
-		// pagination: {
-		// 	el: ".swiper-pagination",
-		// 	// type: "progressbar",
-		// 	clickable: true,
-		// },
 		navigation: {
 			nextEl: ".swiper-button-next",
 			prevEl: ".swiper-button-prev",
@@ -239,7 +231,6 @@ window.addEventListener('DOMContentLoaded', () => {
 			oldParent = document.querySelector('.team__content'),
 			widthScreen = document.querySelector('body').clientWidth;
 		if (widthScreen <= 767) {
-			console.log(1);
 			while (oldParent.childNodes.length > 0) {
 				newParent.append(...oldParent.childNodes);
 			}
