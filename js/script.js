@@ -3,10 +3,11 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
 	const browser = () => {
+		const isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
 		const isFirefox = typeof InstallTrigger !== 'undefined';
 		const blur = document.querySelector('.top__blur'),
-		headerBlur = document.querySelector('.header__blur');
-		if (isFirefox) {
+			headerBlur = document.querySelector('.header__blur');
+		if (!isChrome) {
 			blur.classList.add('top__blur--true');
 			headerBlur.classList.add('header__blur--true');
 		}
