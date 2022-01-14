@@ -14,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
 	};
 	browser();
 
+
 	const menu = () => {
 		const menuBtn = document.querySelector('.menu-button'),
 			link = document.querySelectorAll('.header-nav__link'),
