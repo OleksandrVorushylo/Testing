@@ -100,17 +100,6 @@ window.addEventListener('DOMContentLoaded', () => {
 			check = document.querySelectorAll('.checkbox'),
 			bg = document.querySelector('.team__bg-button');
 
-
-		// const checked = () => {
-		// 	const inp = document.getElementsByName('r');
-		// 	for (let i = 0; i < inp.length; i++) {
-		// 		if (inp[i].type == "radio" && inp[i].checked) {
-		// 			console.log("selected: " + inp[i].value);
-
-		// 		}
-		// 	}
-		// };
-
 		btn.forEach((item, index) => {
 			item.addEventListener('click', () => {
 				for (let i = 0; i < 3; i++) {
