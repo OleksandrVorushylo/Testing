@@ -84,16 +84,37 @@ window.addEventListener('DOMContentLoaded', () => {
 	};
 	tabs();
 
+	// function check() 	{
+	// 	const inp = document.getElementsByName('r');
+	// 	for (let i = 0; i < inp.length; i++) {
+	// 		if (inp[i].type == "radio" && inp[i].checked) {
+	// 			console.log("selected: " + inp[i].value);
+	// 		}
+	// 	}
+	// }
+
+
 	const team = () => {
 		const btn = document.querySelectorAll('.team__button'),
 			team = document.querySelectorAll('.team__text'),
+			check = document.querySelectorAll('.checkbox'),
 			bg = document.querySelector('.team__bg-button');
 
+
+		// const checked = () => {
+		// 	const inp = document.getElementsByName('r');
+		// 	for (let i = 0; i < inp.length; i++) {
+		// 		if (inp[i].type == "radio" && inp[i].checked) {
+		// 			console.log("selected: " + inp[i].value);
+
+		// 		}
+		// 	}
+		// };
 
 		btn.forEach((item, index) => {
 			item.addEventListener('click', () => {
 				for (let i = 0; i < 3; i++) {
-					if (i === index) {
+					if (check[i].checked) {
 						btn[index].classList.add('team__button--active');
 						team[index].classList.add('team__text--active');
 					} else {
@@ -101,15 +122,15 @@ window.addEventListener('DOMContentLoaded', () => {
 						team[i].classList.remove('team__text--active');
 					}
 				}
-				if (index === 0) {
+				if (check[0].checked) {
 					bg.classList.remove('team__bg-button--center');
 					bg.classList.remove('team__bg-button--right');
 				}
-				if (index === 1) {
+				if (check[1].checked) {
 					bg.classList.add('team__bg-button--center');
 					bg.classList.remove('team__bg-button--right');
 				}
-				if (index === 2) {
+				if (check[2].checked) {
 					bg.classList.add('team__bg-button--right');
 					bg.classList.remove('team__bg-button--center');
 				}
@@ -136,20 +157,24 @@ window.addEventListener('DOMContentLoaded', () => {
 				spaceBetween: 10,
 				centeredSlides: true,
 			},
+			768: {
+				slidesPerView: 2.2,
+				spaceBetween: 20
+			},
 			968: {
-				slidesPerView: 1,
+				slidesPerView: 1.6,
 				spaceBetween: 20
 			},
 			1130: {
-				slidesPerView: 2,
+				slidesPerView: 2.2,
 				spaceBetween: 20
 			},
-			1400: {
-				slidesPerView: 3,
+			1440: {
+				slidesPerView: 3.2,
 				spaceBetween: 20
 			},
 			1900: {
-				slidesPerView: 4,
+				slidesPerView: 3.2,
 				spaceBetween: 20,
 			}
 		}

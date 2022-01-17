@@ -49,13 +49,20 @@
       min-width: 380px
     &__button-prev
       right: auto
-      left: 74%
+      left: 78%
     &__button-next
       right: auto
       left: 88%
   .team .swiper-container-horizontal > .swiper-scrollbar
     width: 70%
 
+@media (max-width: 1130px)
+  .team
+
+    &__button-next
+      left: 87%
+    &__button-prev
+      left: 76%
 @media (max-width: 1200px)
   .footer
     height: auto
@@ -113,8 +120,8 @@
       left: auto
   .team .swiper-container-horizontal > .swiper-scrollbar
     width: 80%
-  .team .swiper-scrollbar-drag
-    width: 25% !important
+  // .team .swiper-scrollbar-drag
+  //   width: 25% !important
 
   .contact
     &__form
@@ -321,6 +328,7 @@
       align-items: center
       text-align: center
       justify-content: center
+      padding-left: 5%
     &__item-button
       width: 233px
       height: 56px
@@ -334,6 +342,7 @@
       margin-right: 7px
       width: 19px
       height: 19px
+      left: 10%
     &__bg-button
       height: 38px
       width: 34.15385%
@@ -385,6 +394,7 @@
 
     &__item
       height: 268px !important
+      max-width: 100%
     &__slider-wrap
       height: 315px
   .contact
@@ -687,6 +697,8 @@
     // display: none
     &__content
       width: 90%
+      max-height: 569px
+      overflow-y: scroll
     &__photo
       width: 102px
       height: 90px
@@ -737,3 +749,5 @@
     &__button
       height: 60px
       width: 270px
+  .partners__content-wrap
+    min-height: 270px

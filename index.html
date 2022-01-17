@@ -229,12 +229,24 @@
       <div class="container">
         <div class="team__wrap team__wrap--phone">
           <h2 class="title team__title">Our Team</h2>
-          <div class="team__teams">
-            <button class="team__button team__button--active"><span></span>Team 1</button>
+          <form class="team__teams" action="">
+            <!-- <button class="team__button team__button--active"><span></span>Team 1</button>
             <button class="team__button"><span></span>Team 2</button>
-            <button class="team__button"><span></span>Team 3</button>
+            <button class="team__button"><span></span>Team 3</button> -->
+            <label class="container team__button team__button--active">Team 1
+              <span class="checkmark"></span>
+              <input class="checkbox" type="radio" name="r" checked value=l>
+            </label>
+            <label class="container team__button team__button--active">Team 2
+              <span class="checkmark"></span>
+              <input class="checkbox" type="radio" name="r" value=2>
+            </label>
+            <label class="container team__button team__button--active" >Team 3
+              <span class="checkmark"></span>
+              <input class="checkbox" type="radio" name="r" value=3>
+            </label>
             <span class="team__bg-button"></span>
-          </div>
+          </form>
           <!-- /.team__teams -->
           <div class="team__content">
             <div class="team__about">

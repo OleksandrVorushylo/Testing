@@ -930,8 +930,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 43px;
-  padding-right: 40px;
+  padding: 0 0;
   transition: all 0.3s ease;
   overflow: hidden;
 }
@@ -962,6 +961,8 @@ main {
   width: 25px;
   height: 25px;
   margin-right: 16px;
+  position: absolute;
+  left: 43px;
 }
 
 .team__button {
@@ -977,6 +978,10 @@ main {
   font-weight: normal;
   font-size: 24px;
   line-height: 28px;
+  user-select: none;
+  cursor: pointer;
+  width: 211px;
+  padding-left: 88px;
 }
 
 .team__button:hover {
@@ -993,6 +998,14 @@ main {
 .team__button--active span {
   background: url("../img/team/icon/team-active.svg") 0 0/100% no-repeat;
   margin-right: 15px;
+}
+
+.team__button input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
 
 .team__cross-border {
@@ -1060,13 +1073,13 @@ main {
   top: 0;
   left: 0;
   height: 100%;
-  width: 1780px;
+  width: 1400px;
 }
 
 .team__item {
   position: relative;
   border-radius: 5px;
-  width: 430px;
+  max-width: 430px;
   height: 345px;
   border: 1px solid #9A9A9A;
   transition: all 0.3s ease;
@@ -1156,7 +1169,7 @@ main {
   height: 50px;
   bottom: 0;
   top: auto;
-  right: 25.2809%;
+  right: 5.8809%;
   transition: all 0.3s ease;
   background-color: #F8F8F8;
 }
@@ -1178,7 +1191,7 @@ main {
   bottom: 0;
   left: auto;
   top: auto;
-  right: 29.77528%;
+  right: 10.8809%;
   transition: all 0.3s ease;
   background-color: #F8F8F8;
 }
@@ -1203,10 +1216,6 @@ main {
   border-bottom: 1px solid #676767;
   height: 3.5px;
   transform: translateY(-22px);
-}
-
-.team .swiper-scrollbar-drag {
-  width: 230px !important;
 }
 
 .team .swiper-button-disabled {
@@ -1704,7 +1713,7 @@ main {
 .modal__content {
   position: relative;
   margin: auto;
-  margin-top: 50vh;
+  margin-top: 40vh;
   transform: translateY(-222px);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
@@ -1901,7 +1910,7 @@ main {
   }
   .team__button-prev {
     right: auto;
-    left: 74%;
+    left: 78%;
   }
   .team__button-next {
     right: auto;
@@ -1909,6 +1918,15 @@ main {
   }
   .team .swiper-container-horizontal > .swiper-scrollbar {
     width: 70%;
+  }
+}
+
+@media (max-width: 1130px) {
+  .team__button-next {
+    left: 87%;
+  }
+  .team__button-prev {
+    left: 76%;
   }
 }
 
@@ -1986,9 +2004,6 @@ main {
   }
   .team .swiper-container-horizontal > .swiper-scrollbar {
     width: 80%;
-  }
-  .team .swiper-scrollbar-drag {
-    width: 25% !important;
   }
   .contact__form {
     width: 100%;
@@ -2248,6 +2263,7 @@ main {
     align-items: center;
     text-align: center;
     justify-content: center;
+    padding-left: 5%;
   }
   .team__item-button {
     width: 233px;
@@ -2264,6 +2280,7 @@ main {
     margin-right: 7px;
     width: 19px;
     height: 19px;
+    left: 10%;
   }
   .team__bg-button {
     height: 38px;
@@ -2328,6 +2345,7 @@ main {
   }
   .team__item {
     height: 268px !important;
+    max-width: 100%;
   }
   .team__slider-wrap {
     height: 315px;
@@ -2686,6 +2704,8 @@ main {
   }
   .modal__content {
     width: 90%;
+    max-height: 569px;
+    overflow-y: scroll;
   }
   .modal__photo {
     width: 102px;
@@ -2754,6 +2774,9 @@ main {
   .top__button {
     height: 60px;
     width: 270px;
+  }
+  .partners__content-wrap {
+    min-height: 270px;
   }
 }
 /*# sourceMappingURL=style.css.map */

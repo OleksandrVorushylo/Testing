@@ -12,9 +12,9 @@
     width: 61.5625%
     height: 100%
     background: linear-gradient(90deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 107.87%)
+  &__title
 
-  // &__teams-wrap
-  //   flex-basis: 100%
+  &__teams-wrap
   &__teams
     position: relative
     width: 633px
@@ -26,10 +26,10 @@
     display: flex
     justify-content: space-between
     align-items: center
-    padding: 0 43px
-    padding-right: 40px
+    padding: 0 0
     transition: all 0.3s ease
     overflow: hidden
+
   &__bg-button
     position: absolute
     left: 0
@@ -51,6 +51,9 @@
     width: 25px
     height: 25px
     margin-right: 16px
+    position: absolute
+    left: 43px
+
   &__button
     position: relative
     z-index: 10
@@ -64,6 +67,13 @@
     font-weight: normal
     font-size: 24px
     line-height: 28px
+    -webkit-user-select: none
+    -moz-user-select: none
+    -ms-user-select: none
+    user-select: none
+    cursor: pointer
+    width: 211px
+    padding-left: 88px
     &:hover
       filter: drop-shadow(2px 2px 2px #2222226c)
     &--active
@@ -74,6 +84,12 @@
     &--active span
       background: url('../img/team/icon/team-active.svg') 0 0 / 100% no-repeat
       margin-right: 15px
+  &__button input
+    position: absolute
+    opacity: 0
+    cursor: pointer
+    height: 0
+    width: 0
 
   &__cross-border
     background: url('../img/team/bg/cross.svg') 0 0 / 100% no-repeat
@@ -125,14 +141,14 @@
     top: 0
     left: 0
     height: 100%
-    width: 1780px
+    width: 1400px
 
   &__swiper-wrapper
 
   &__item
     position: relative
     border-radius: 5px
-    width: 430px
+    max-width: 430px
     height: 345px
     border: 1px solid #9A9A9A
     transition: all 0.3s ease
@@ -219,7 +235,7 @@
     height: 50px
     bottom: 0
     top: auto
-    right: 25.2809%
+    right: 5.8809%
     transition: all 0.3s ease
     background-color: #F8F8F8
     &::after
@@ -235,7 +251,7 @@
     bottom: 0
     left: auto
     top: auto
-    right: 29.77528%
+    right: 10.8809%
     transition: all 0.3s ease
     background-color: #F8F8F8
     &::after
@@ -257,7 +273,7 @@
   height: 3.5px
   transform: translateY(-22px)
 .team .swiper-scrollbar-drag
-  width: 230px !important
+  // width: 230px !important
 .team .swiper-button-disabled
   opacity: 1
   background-color: transparent
